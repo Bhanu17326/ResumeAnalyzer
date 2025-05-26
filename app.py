@@ -23,7 +23,7 @@ def get_gemini_response(input_text, pdf_content, prompt):
 def input_pdf_setup(uploaded_file):
     images = pdf2image.convert_from_bytes(
         uploaded_file.read(),
-        poppler_path=r"C:\Users\J SAI BHANU PRAKASH\Downloads\popplers\poppler-24.08.0\Library\bin"
+        
     )
     first_page = images[0]
 
